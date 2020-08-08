@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 dataku = pd.read_excel('data.xlsx')
 print(dataku.head())
+print("---")
 
 # split dataset: 90% training & 10% test
 from sklearn.model_selection import train_test_split
@@ -25,13 +26,19 @@ model = LinearRegression()
 model.fit(a,c)
 
 # slope/gradient (m)
+print("slope/gradient")
 print(model.coef_)
+print("---")
 
 # intercept (b)
+print("intercept")
 print(model.intercept_)
+print("---")
 
 # akurasi (score)
+print("akurasi")
 print(model.score(b,d) * 100, '%')
+print("---")
 
 # prediksi:
 # ukuran: 60, kamar: 3, AC: 2
